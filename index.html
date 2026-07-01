@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IVAX Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-dark': '#294541',
+            'brand-yellow': '#F8CD46',
+            'brand-gray': '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-brand-dark min-h-screen">
+
+  <nav class="max-w-6xl mx-auto px-6 py-8">
+    <div class="text-2xl font-bold tracking-wider text-brand-dark uppercase">
+      IVAX
+    </div>
+  </nav>
+
+  <section class="max-w-6xl mx-auto px-6 pt-12 pb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="space-y-8 relative z-10">
+      <h1 class="text-6xl md:text-7xl font-extrabold leading-tight">
+        Paint <br>
+        your thoughts <br>
+        with <span class="text-brand-yellow">IVAX</span>
+      </h1>
+      
+      <div class="flex items-center gap-6 mt-8">
+        <a href="#" class="bg-brand-yellow text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-yellow-500 transition-colors">
+          Portfolio
+        </a>
+        <a href="#" class="border border-brand-dark px-8 py-3 rounded-full font-semibold text-sm hover:bg-brand-dark hover:text-white transition-colors">
+          Check with us
+        </a>
+      </div>
+    </div>
+    
+    <div class="relative flex justify-center">
+      <img src="https://placehold.co/400x600/transparent/F8CD46?text=Large+Lightbulb" alt="Lightbulb Idea" class="w-full max-w-sm drop-shadow-2xl object-contain" />
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 py-16 border-t border-gray-100">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <h2 class="text-5xl md:text-6xl font-extrabold text-brand-dark mb-2">20+</h2>
+        <p class="font-bold text-sm text-brand-dark">Experts</p>
+      </div>
+      <div>
+        <h2 class="text-5xl md:text-6xl font-extrabold text-brand-dark mb-2">25+</h2>
+        <p class="font-bold text-sm text-brand-dark">Verticals</p>
+      </div>
+      <div>
+        <h2 class="text-5xl md:text-6xl font-extrabold text-brand-dark mb-2">50+</h2>
+        <p class="font-bold text-sm text-brand-dark">Regular customers</p>
+      </div>
+      <div>
+        <h2 class="text-5xl md:text-6xl font-extrabold text-brand-dark mb-2">110+</h2>
+        <p class="font-bold text-sm text-brand-dark">Completed projects</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 py-24 text-center">
+    <h2 class="text-3xl font-extrabold mb-24">
+      We <span class="text-brand-yellow">deliver</span>
+    </h2>
+
+    <div class="relative max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      
+      <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:block z-0">
+        <img src="https://placehold.co/200x300/transparent/F8CD46?text=Small+Lightbulb" alt="Lightbulb Core" class="w-48 object-contain" />
+      </div>
+
+      <div class="flex flex-col gap-16 w-full md:w-64 z-10 text-left">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm relative">
+          <span class="absolute top-6 right-6 text-xs text-gray-400 font-bold">01</span>
+          <div class="w-8 h-8 text-brand-yellow mb-4">✨</div>
+          <h3 class="font-bold text-lg mb-4 text-brand-dark">Branding</h3>
+          <ul class="space-y-2 text-sm text-brand-gray">
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Brand identity</li>
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Brand strategy</li>
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Visual conception</li>
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Advertising</li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm relative">
+          <span class="absolute top-6 right-6 text-xs text-gray-400 font-bold">03</span>
+          <div class="w-8 h-8 text-brand-yellow mb-4">💻</div>
+          <h3 class="font-bold text-lg mb-4 text-brand-dark">Web development</h3>
+          <ul class="space-y-2 text-sm text-brand-gray">
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Landing-pages</li>
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Corporate sites</li>
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Online-stores</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-16 w-full md:w-64 z-10 text-left mt-16 md:mt-0">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm relative">
+          <span class="absolute top-6 right-6 text-xs text-gray-400 font-bold">02</span>
+          <div class="w-8 h-8 text-brand-yellow mb-4">📱</div>
+          <h3 class="font-bold text-lg mb-4 text-brand-dark">WEB design</h3>
+          <ul class="space-y-2 text-sm text-brand-gray">
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Websites</li>
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> UX/UI</li>
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Mobile apps</li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm relative">
+          <span class="absolute top-6 right-6 text-xs text-gray-400 font-bold">04</span>
+          <div class="w-8 h-8 text-brand-yellow mb-4">🎥</div>
+          <h3 class="font-bold text-lg mb-4 text-brand-dark">Video</h3>
+          <ul class="space-y-2 text-sm text-brand-gray">
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Filmmaking</li>
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Animation</li>
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Advertisement</li>
+            <li class="flex items-center gap-2"><span class="text-brand-yellow text-xs">○</span> Social</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+</body>
+</html>
